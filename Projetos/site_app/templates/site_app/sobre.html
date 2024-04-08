@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'site_app/style.css' %}"/>
+    <title>Livro 1984</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        li{
+            margin: 0 15px;
+        }
+
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>1984, de Geroge Orwell</h1>
+    <p>“Quando se ama alguém, ama-se, e quando não se tem nada mais para lhe dar, ainda se lhe dá amor.”</p>
+
+<nav>
+    <ul>
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="" class="nav-link pux-2 text-body-secondary">Sobre o autor</a></li>
+        <li class="nav-item"><a href="/contato/" class="nav-link px-2 text-body-secondary">Contato</a></li>
+        
+    </ul>
+</nav>
+</header>
+
+<div class="container">
+
+    <h2>Biografia</h2>
+    <div class="container">
+        <div class="image">
+            <img src="{% static 'site_app/GEORGE.jpg' %}" alt="George Orwell">
+    </div>        
+    <p>George Orwell, pseudônimo de Eric Arthur Blair, nasceu em 25 de junho de 1903, na cidade de Motihari, na Índia, que vivia sob o domínio da colonização inglesa. Filho de um oficial britânico da Coroa inglesa e de uma mãe de origem francesa, em 1904, ele, quando tinha um ano de idade, e sua família mudaram-se para Shiplake, nos arredores da cidadezinha de Henley-on-Thames, no interior de Oxfordshire, entre Oxford e Londres.</p>
+
+    <p>Nessa localidade, ingressou em um internato preparatório onde se destacou dos demais colegas de classe por sua refinada inteligência, o que lhe garantiu uma bolsa de estudos em um importante colégio na Inglaterra, o Eton College, onde estudou de 1917 a 1921.</p>
+
+    <p> Nessa instituição escolar, teve o privilégio de ser aluno do escritor Aldous Huxley (1894-1963), autor do romance distópico Admirável mundo novo, publicado em 1932. Em 1922, começou a trabalhar na Polícia Imperial Indiana, em Myanmar</p>
+
+    <p>Nessa instituição escolar, teve o privilégio de ser aluno do escritor Aldous Huxley (1894-1963), autor do romance distópico Admirável mundo novo, publicado em 1932. Em 1922, começou a trabalhar na Polícia Imperial Indiana, em Myanmar.</p>
+
+    <p>Em 1927, deixou esse emprego para dedicar-se à carreira de escritor na Inglaterra. Na capital inglesa, vivenciou um cotidiano de privações econômicas em pensões humildes. Contudo, essa experiência em meio à vida pobre não foi resultado de adversidades econômicas, mas antes uma opção, já que Orwell objetivava seu amadurecimento pessoal, intelectual e artístico, o que, segundo ele, poderia ser atingido ao sair de sua zona de conforto.</p>
+
+    <p>Dando prosseguimento a esse projeto, em 1928, o autor foi para Paris, onde viveu e escreveu durante mais de um ano, exercendo também a função de lavar pratos em um hotel de luxo.</p>
+
+    <p>Orwell não chegou a graduar-se, mas trabalhou na Polícia Imperial Indiana, além de ter exercido a função de jornalista, de crítico literário e, principalmente, de romancista, tendo ganhado destaque mundial como um dos mais influentes escritores do século XX. Orwell morreu em Londres, de tuberculose, aos 46 anos de idade. </p>
+    </div>
+
+    <h2>Posições ideológicas de George Orwell</h2>
+    <div class="container">
+        <div class="image">
+            <img src="{% static 'site_app/george-autor.jpg' %}" alt="George Orwell">
+        </div>
+    <p>George Orwell, muito antenado ao contexto político e histórico que o cercava na Europa do século XX, foi crítico tanto do nazismo alemão quanto do comunismo da União Soviética, sendo, inclusive, um dos primeiros intelectuais a prever o fim desse regime. Orwell também se posicionou criticamente em relação ao movimento de não violência, liderado por Mahatma Gandhi, em prol da luta pela independência da Índia.</p>
+
+    <p>Segundo o autor de A revolução dos bichos, a estratégia de resistência não violenta de Gandhi poderia funcionar em países com uma imprensa livre e o direito de reunião que possibilitassem “não apenas apelar à opinião pública externa, mas atrair uma massa de pessoas para o movimento, ou mesmo para tornar suas intenções conhecidas pelo adversário”.</p>
+
+    <p>Como esse contexto ideal não condizia com a realidade indiana, Orwell não acreditava que as ações pacifistas de Gandhi pudessem ter sucesso, pensamento que destoava da maioria dos analistas políticos da época.</p>
+    
+    
+</div>
+
+<footer>
+    <p>© 2024 JorgeFernando.com | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

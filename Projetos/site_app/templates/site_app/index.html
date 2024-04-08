@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'site_app/style.css' %}"/>
+    <title>Livro 1984</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        li{
+            margin: 0 15px;
+        }
+
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+{% include "site_app/partials/header.html" %}
+
+<div class="container">
+    <div class="image">
+        <img src="{% static 'site_app/georgeo.jpg' %}" alt="George Orwell">
+    </div>
+<h2>Sobre o livro</h2>
+    <p>Mil novecentos e oitenta e quatro (também publicado como 1984) é um romance distópico do escritor inglês George Orwell. Foi publicado em 8 de junho de 1949 pela Secker & Warburg como o nono e último livro de Orwell concluído em vida. Tematicamente, centra-se nas consequências do totalitarismo, da vigilância em massa e da lavagem cerebral na sociedade. Orwell, um socialista democrático, modelou o Estado autoritário descrito no romance com base na União Soviética stalinista e na Alemanha Nazista. De forma mais ampla, o romance examina o papel da verdade e dos fatos nas sociedades e as formas como eles podem ser manipulados.
+    </p>
+    <div class="image">
+        <img src="{% static 'site_app/1984.png' %}" alt="imagem-1984">
+    </div>
+<h2>Sinopse</h2>
+    <p>A história se passa em um futuro imaginado em um ano não especificado que se acredita ser 1984, quando grande parte do mundo está em um estado de guerra perpétua. A Grã-Bretanha, agora conhecida como Pista de Pouso Número 1, tornou-se uma província do superestado totalitário chamado Oceania, que é liderado pelo Grande Irmão, um líder ditatorial apoiado por um intenso culto à personalidade fabricado pela Polícia do Pensamento. O partido promove a vigilância governamental onipresente e, através do Ministério da Verdade, o negacionismo histórico e a propaganda estatal constante para perseguir a individualidade e o pensamento independente dos cidadãos.</p>
+
+    <p>Winston Smith, o protagonista da história, é um trabalhador mediano e aplicado do Ministério da Verdade, mas que secretamente odeia o partido e sonha com uma revolução. Smith também mantém um diário proibido e começa um relacionamento secreto com uma colega, Julia, com quem descobre sobre um obscuro grupo de resistência chamado Irmandade. No entanto, o contato deles dentro da Irmandade na verdade era um agente do partido e Smith e Julia acabam sendo presos. Ele é submetido a meses de manipulação psicológica e tortura pelo Ministério do Amor e é libertado assim que passa a amar o Grande Irmão.</p>
+
+<h2>Obras de George Orwell</h2>
+    <li>A Planta de Ferro (1930)</li>
+    <li>Na pior em Paris e Londres (1933)</li>
+    <li>Um Pouco de Ar, Por favor (1939)</li>
+    <li>Dentro da Baleia (1940)</li>
+    <li>A revolução dos bichos (1945)</li>
+    <li>1984 (1949)</li>
+</div>
+<div class="image">
+    <img src="{% static 'site_app/george-livros.jpg' %}" alt="imagem-1984">
+</div>
+
+<footer>
+    <p>© 2024 JorgeFernando.com | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

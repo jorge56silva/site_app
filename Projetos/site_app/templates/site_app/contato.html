@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'site_app/style.css' %}"/>
+    <title>Livro 1984</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        li{
+            margin: 0 15px;
+        }
+
+        nav {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    
+    <h1>1984, de Geroge Orwell</h1>
+    <p>“Quando se ama alguém, ama-se, e quando não se tem nada mais para lhe dar, ainda se lhe dá amor.”</p>
+
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="/sobre/" class="nav-link px-2 text-body-secondary">Sobre o autor</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="">Contato</a>
+            </li>
+        </ul>
+        </ul>
+    </nav>
+
+<div class="container">
+   
+
+    </header>
+    <h1 class="mt-4">Para mais informações entre em contato conosco</h1>
+    <p> Entre em contato pelos meios
+        abaixo:</p>
+
+    <div class="contact-info">
+        <li><a href="https://criarmeulink.com.br/u/1712608487" class="d-block">
+            <i class="far fa-envelope mr-2"></i>jorge_fs_silva@estudante.sesisenai.org.br 
+        </a>
+        </li>
+        <li><a href="http://wa.me/+554888741069" target="_blank" class="d-block">
+            <i class="fab fa-whatsapp mr-2"></i> +55 (48)88741069
+        </a>
+        </li>
+        <li><a href="tel:+55 (48) 88741069" class="d-block">
+            <i class="fas fa-phone mr-2"></i>(48) 88741069
+        </a>
+        </li>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 JorgeFernando.com | Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
