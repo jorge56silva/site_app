@@ -30,7 +30,6 @@
             margin: 0 15px;
         }
 
-
         nav {
             background-color: #343a40;
             color: white;
@@ -43,7 +42,6 @@
             text-decoration: none;
             margin: 0 15px;
         }
-
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -63,6 +61,7 @@
         p {
             line-height: 1.6;
         }
+
         footer {
             background-color: #343a40;
             color: white;
@@ -70,26 +69,15 @@
             padding: 10px 0;
             bottom: 0;
             width: 100%;
-            
         }
 
     </style>
 </head>
 <body>
 
-<header>
-    <h1>1984, de Geroge Orwell</h1>
-    <p>“Quando se ama alguém, ama-se, e quando não se tem nada mais para lhe dar, ainda se lhe dá amor.”</p>
+    {% include "site_app/partials/header.html" %}
 
-<nav>
-    <ul>
-        <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="" class="nav-link pux-2 text-body-secondary">Sobre o autor</a></li>
-        <li class="nav-item"><a href="/contato/" class="nav-link px-2 text-body-secondary">Contato</a></li>
-        
-    </ul>
-</nav>
-</header>
+    
 
 <div class="container">
 
@@ -124,12 +112,23 @@
 
     <p>Como esse contexto ideal não condizia com a realidade indiana, Orwell não acreditava que as ações pacifistas de Gandhi pudessem ter sucesso, pensamento que destoava da maioria dos analistas políticos da época.</p>
     
-    
+    <h2>Obras de George Orwell</h2>
+    <li>A Planta de Ferro (1930)</li>
+    <li>Na pior em Paris e Londres (1933)</li>
+    <li>Um Pouco de Ar, Por favor (1939)</li>
+    <li>Dentro da Baleia (1940)</li>
+    <li>A revolução dos bichos (1945)</li>
+    <li>1984 (1949)</li>
+</div>
+<div class="image">
+    <img src="{% static 'site_app/george-livros.jpg' %}" alt="imagem-1984">
+</div>  
 </div>
 
-<footer>
+  <footer>
     <p>© 2024 JorgeFernando.com | Todos os direitos reservados</p>
 </footer>
+
 
 </body>
 </html>

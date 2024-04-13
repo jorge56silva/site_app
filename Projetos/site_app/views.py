@@ -9,3 +9,6 @@ def sobre(request):
 
 def contato(request):
     return render(request, "site_app/contato.html")
+
+def Personagens(request):
+    return render(request, "site_app/Personagens.html")

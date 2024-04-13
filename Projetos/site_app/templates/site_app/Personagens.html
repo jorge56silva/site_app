@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'site_app/style.css' %}"/>
+    <!-- Adicione o link para o CSS do Bootstrap aqui -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Livro 1984</title>
+    <style>
+        /* Adicione seus estilos CSS personalizados aqui */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    {% include "site_app/partials/header.html" %}
+
+    
+
+    <div class="container mt-4 mb-4 p-5">
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Winston Smith</h2>
+                <p class="lead">O protagonista de 39 anos de idade que é descrito como um homem comum fleumático que nutre pensamentos a favor de uma rebelião e que está curioso sobre o poder do partido e o passado antes da revolução.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="{% static 'site_app/Winston_Smith.jpg' %}" alt="Winston Smith" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" focusable="false">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Júlia</h2>
+                <p class="lead">Amante de Winston que defende publicamente a doutrina do partido como membro da fanática Liga Anti-Sexo, mas gosta de pequenos atos de rebelião, apesar de não ter interesse em desistir de seu estilo de vida.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="{% static 'site_app/julia_1984.png' %}" alt="Júlia" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" focusable="false">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">O'Brien</h2>
+                <p class="lead">Um personagem misterioso, O'Brien é um membro do Partido Interno que se passa por membro da organização chamada Irmandade, a resistência contrarrevolucionária, para capturar Winston. É um espião cujo objetivo é enganar, prender e capturar Winston e Julia.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="{% static 'site_app/O_brien.jpg' %}" alt="O'Brien" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" role="img" focusable="false">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+    </div>
+
+    <footer>
+        <p>© 2024 JorgeFernando.com | Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Adicione os scripts do Bootstrap se necessário -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
